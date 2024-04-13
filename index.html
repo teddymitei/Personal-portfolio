@@ -13,17 +13,19 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Kelvin</span><br>Jen From Australia</h1>
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Teddy</span><br>Mitei From Kenya</h1>
             </div>
         </div>
     </div>
@@ -31,11 +33,11 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png">
+                    <img src="images/user.JPG">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>I'm a computer scientist proficient in developing websites and Machine Learning models to address a range of challenges. Additionally, I'm a fervent enthusiast of data science, driven by a deep passion for exploring its intricacies and potential applications.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -43,9 +45,8 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Chatbot Development</span><br>Custom and AI Chatbots</li>
                             <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -68,20 +69,20 @@
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h2>Web Development</h2>
+                    <p>I specialize in crafting responsive and interactive websites tailored to diverse business requirements and niches.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i class="fa-solid fa-comments"></i>
+                    <h2>Chatbot Development</h2>
+                    <p>I create custom and AI chatbots, tailored to diverse business needs, ensuring seamless communication solutions.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h2>Tech Support</h2>
+                    <p>"I can provide IT support for connectivity, hardware, and software issues, ensuring smooth operations for businesses.</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
@@ -92,13 +93,53 @@
             <h1 class="sub-title">My work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/work-1.jpeg">
+                    <div class="layer">
+                        <h3>IT Support AI Chatbot</h3>
+                        <p>Incorporates AI models with the primary goal of reducing downtime by empowering employees with the capability of solving simple technical issues thereby increasing productivity in the workplace.</p>
+                        <a href="https://github.com/teddymitei/AI-CHATBOT"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png">
+                    <img src="images/work-2.webp">
+                    <div class="layer">
+                        <h3>Online Product Review Analysis</h3>
+                        <p>The model, using sentiment analysis, can assists in identifying and stopping the posting of bogus reviews on online marketplaces, which can deceive customers and hurt businesses.</p>
+                        <a href="https://github.com/teddymitei/OnlineProdReview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png">
+                    <img src="images/work-3.jpeg">
+                    <div class="layer">
+                        <h3>Movie Review App</h3>
+                        <p>A dynamic website for movie reviews that users can add movies to watch lists and also can review them. </p>
+                        <a href="https://github.com/changach-3000/MovieReviewApp-RAD-PROJECT"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>teddymitei@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+254795658796</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/teddy-mitei-8076901a3/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -125,5 +166,32 @@
             document.getElementById(tabname).classList.add("active-tab")
         }
     </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw3lWDPYgWbP9-ESlIRj-bD1LY3ogNNPQUStvqmhgfF4_ninPT5q0QUYJW3Fzdm4lXV/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
