@@ -1,3 +1,3 @@
 ## Personal portfolio
 
-This is my personal portfolio website teddymitei.vercel.app
+This is my portfolio website teddymitei.vercel.app
